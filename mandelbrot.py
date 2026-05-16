@@ -43,4 +43,5 @@ def renderer(width, height, max_iter):
     plt.axis("off")
 
 
-renderer(800, 800, 100)
+if __name__ == "__main__":
+    renderer(800, 800, 100)
