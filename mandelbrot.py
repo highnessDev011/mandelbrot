@@ -39,8 +39,8 @@ def renderer(width, height, max_iter):
     view = generate(width, height, max_iter)
     plt.imshow(view, cmap="inferno")
 
-    plt.show()
     plt.axis("off")
+    plt.show()
 
 
 if __name__ == "__main__":
