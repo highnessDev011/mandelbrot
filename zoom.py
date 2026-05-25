@@ -2,7 +2,7 @@ import matplotlib.cm as cm
 import numpy as np
 from manim import *
 
-from mandelbrot import generate_fast, mandelbrot
+from mandelbrot import generate_fast
 
 # lerp = linear interpolation
 # Formula: value = start + t * (end - start)

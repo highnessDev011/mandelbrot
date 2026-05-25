@@ -22,7 +22,7 @@ def mandelbrot(c, max_iter):
     return max_iter
 
 
-# This function is vectorized - x, y are 1D arrays with np.meshgrid you can transform them to 2D Arrays
+# This function is vectorized - x, y are 1D arrays — np.meshgrid transforms them into 2D grids
 # C is used to compute the complex numbers
 # Z is used to create a 2d array of zeroes
 # Generates all pixels, coordinates and checks which 'escaped'
@@ -46,7 +46,7 @@ def generate_fast(width, height, max_iter, x_min=-2, x_max=1, y_min=-1.5, y_max=
     # iterate max_iter times, only updating points that haven't escaped
     for i in range(max_iter):
         Z[mask] = Z[mask] ** 2 + C[mask]
-        escaped = abs(Z) > 2
+        escaped = abs(Z) > 2  # check which points have gone past the escape boundary
 
         iterations[escaped & mask] = i
 
